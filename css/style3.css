@@ -1,0 +1,91 @@
+#inf_org{
+	border-bottom: 2px solid #0A3C57;
+	position: relative;
+	margin-top: 10px;
+}
+#name_olympiad1{
+	color: #0A3C57;
+	font-size: 20pt;
+}
+#digits11{
+	background: none; 
+	border-style: none; 
+	font-family: 'Palatino Linotype'; 
+	color: white;
+	margin-left: 20px;
+	
+}
+#organizator_info{
+	color: #0A3C57;
+	font-size: 20pt;
+	position: absolute;
+	right: 0;
+}
+#lk_fio1{
+	color: #0A3C57;
+	font-size: 18pt;
+	margin: 15px 0 0 15px;
+}
+#lk_schoolboy{
+	background: #27739A;
+	Color: white;
+	font-size: 16pt;
+	padding: 0 10px 0 40px;
+	border-radius: 0 4px 4px 0;
+}
+#lk_schoolboy1{
+	background: #27739A;
+	Color: white;
+	font-size: 16pt;
+	padding: 0 10px 0 81px;
+	border-radius: 0 4px 4px 0;
+}
+#lk_phone, #lk_email{
+	padding-top: 15px;
+}
+
+#phone_lk, #email_lk{
+	color:#0A3C57;
+	font-size: 16pt;
+	margin: 0 0 0 15px;
+}
+#table_arhiv{
+border-collapse: collapse; 
+color: #0A3C57;
+}
+#table_arhiv_thead{
+	background: #0A3C57; 
+color : white; 
+background: linear-gradient(#4482ac, #2e678c);
+}
+.table_arhiv_na{
+	width: 420px;
+	height: 35px;
+}
+.table_arhiv_td_shapka{
+	width: 50px;
+}
+.arh_str{
+	height: 50px;
+	border-bottom: 10px solid white;
+	border-top: 10px solid white;
+}
+.table_arhiv_td1{
+	background: #6AC0ED;
+	height: 50px;
+	padding-left: 5px;
+}
+.table_arhiv_td2{
+	width: 100px;
+	padding-left: 10px;
+	
+}
+.table_arhiv_td3{
+	text-decoration: underline;
+	background: #6AC0ED;
+}
+.table_arhiv_td4{
+	text-align: center;
+	background: #6AC0ED;
+}
+}

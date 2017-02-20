@@ -1,0 +1,275 @@
+/* Стили модального окна */
+
+
+
+.modal-header h2 {
+    color: #555;  
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1;    
+    margin: 0;
+	text-align: center;
+}
+.modal-header2 {
+ 
+		margin: -25px 0px 5px 0px;
+		padding: 0px 0px 0px 0px;
+		vertical-align: middle;
+ 
+}
+.modal-header2 h2 {
+    color: #555;  
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1;  
+		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+    margin: 0;
+	text-align: center;
+}
+/* кнопка закрытия окна */
+.modal .btn-close {
+    color: #aaa;
+    cursor: pointer;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+.modal .btn-close:hover {
+    color: red;
+}
+/* слой затемнения */
+.modal-wrap:before {
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+	
+}
+.modal-overlay {
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 102;
+}
+/* активация слоя затемнения и модального блока */
+.modal-open:checked ~ .modal-wrap:before,
+.modal-open:checked ~ .modal-wrap .modal-overlay {
+    display: block;
+}
+.modal-open:checked ~ .modal-wrap .modal-dialog {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 20%;
+}
+/* элементы модального окна */
+.modal-dialog {
+    background: #fefefe;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    width: 80%;
+    max-width: 500px;
+	
+    left: 50%;
+    top: -100%;
+    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -webkit-transform: translate(-50%, -500%);
+    -ms-transform: translate(-50%, -500%);
+    -o-transform: translate(-50%, -500%);
+    transform: translate(-50%, -500%);
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out;
+    -o-transition: -o-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+    z-index: 103;
+}
+.modal-body {
+  padding: 10px;
+  font-family: 'Palatino Linotype'; 
+  background: linear-gradient(#4482ac, #2e678c);
+  color:white;
+  text-align: center;
+  vertical-align: middle;
+  
+
+	
+  max-height: 25px;
+  
+}
+.modal-body p{
+
+  
+	white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+	
+ 
+  
+}
+.modal-condition{
+	padding: 0px 0px 0px 0px;
+	margin: -15px 0px -30px 0px;
+	text-align:center;
+}
+.modal-body2 {
+	
+  padding: 10px;
+  font-family: 'Palatino Linotype'; 
+  background: white;  
+  text-align: center;
+  text-overflow: ellipsis;
+}
+.modal-body p {
+    margin: 0;
+}
+.modal-header,
+.modal-footer {
+    padding: 20px 20px;
+	text-align: center;
+}
+.modal-header {
+    
+}
+.modal-header h2 {
+    font-size: 28px;
+    margin: 0;
+}
+.modal-header2 h2 {
+    font-size: 28px;
+    margin: 0;
+	text-align: center;
+	margin-top: 30px;
+}
+.modal-footer {
+    
+    text-align: right;
+}
+/* адаптивные картинки в модальном блоке */
+.modal-body img { 
+    max-width: 100%;
+    height: auto;
+}
+/* кнопки */
+.btn {
+    background: #fff;
+    border: #555 solid 1px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+ 
+	
+	
+	height:16px;
+	width: 100px;
+	background-image: url(../images/zayvka.png);
+	background-position:center center;   
+	background-size: 106% auto;
+	background-repeat: no-repeat;
+	border: 0.7px solid #0A3D58;
+	margin: 2px 0 0 0;
+	border-radius: 2px;
+	
+}
+.btn3 {
+    display: inline-block;
+  color: white;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-radius: 3px;
+  border-color: #E31E24;
+  background: linear-gradient(#DC291B, #9C1A0F) ;
+  transition: 0.2s;
+  height:10px;
+	width: 80px;
+	
+}
+.btn2 {
+    background: #fff;
+    border: #555 solid 1px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-align: center;
+   
+   
+	
+	background-image: url(../images/otkaz.png);
+	background-position:center center;   
+	background-size: 106% auto;
+	background-repeat: no-repeat;
+	border: 0.7px solid #0A3D58;
+	margin: 2px 0 0 0;
+	border-radius: 2px;
+	
+
+ 
+	
+	
+	
+	
+
+	
+	
+}
+
+.btn:hover, .btn:focus {
+    background: #f2f2f2;
+}
+.btn-primary {
+	display: inline-block;
+  color: white;
+	float: left;
+	margin-left: 40px;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-radius: 3px;
+  border-color: #4EB058;
+  background: linear-gradient(#4EB058, #4DAF56) ;
+  transition: 0.2s;
+  width: 80px;
+}
+.btn-primary2 {
+    background: #428bca;
+    border-color: #357ebd;
+    color: #fff;
+		display: inline-block;
+  color: white;
+  padding: .5em 2em;
+  outline: none;
+  margin-right: 40px;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-radius: 3px;
+  border-color: #E31E24;
+  background: linear-gradient(#E31E24, #9C2420) ;
+  transition: 0.2s;
+  width: 80px;
+}
+.btn-primary:hover{
+    background: linear-gradient(#4EB058, #4DAF56) ;
+}
+.btn-primary2:hover{
+     background: linear-gradient(#E31E24, #9C2420) ;
+}

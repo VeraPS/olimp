@@ -1,0 +1,606 @@
+.knopka_retain{            /*кнопка сохранения*/
+	display: inline-block;
+  color: white;
+
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-radius: 3px;
+  border-color: #4EB058;
+  background: linear-gradient(#50C54C, #32AF0E) ;
+  transition: 0.2s;
+}
+.knopka_retain:hover { background: linear-gradient(#32AF0E, #3E900E ); } /* при наведении курсора мышки */
+.knopka_retain:active { background:linear-gradient(#3E900E, #32AF0E); } /* при нажатии */
+.knopka_retain:hover {cursor: pointer}
+
+#sex2:hover {cursor: pointer}
+#name_olympiad1{
+	display: inline-block;
+	width: 80%;
+	white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+}
+.name_olympiad2{
+	
+	width: 70%;
+	
+}
+
+
+.time_number{
+	border: none;
+	border-bottom: 2px solid #2e678c;
+	
+}
+
+.lk_schoolboy_blok{ 
+	margin: 15px 0 15px 0; 
+	
+}
+#knopka_retain1{    
+                    /*кнопка добавления этапа*/
+	display: inline-block;
+  color: white;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-radius: 3px;
+  border-color: #4EB058;
+  background: linear-gradient(#50C54C, #4DAF56) ;
+  transition: 0.2s;
+  position: relative;
+  left: 210px;
+  font-size:10px;
+  font-family: Palatino Linotype, Verdana, Geneva, sans-serif;
+  width: 130px;
+}
+#knopka_retain1:hover { background: linear-gradient(#32AF0E, #3E900E ); } /* при наведении курсора мышки */
+#knopka_retain1:active { background:linear-gradient(#3E900E, #32AF0E); } /* при нажатии */
+
+
+#knopka_retain{
+	
+	position: relative;
+}
+#label_pass{ /*текст в восстановлении пароля*/
+	display: inline-block;
+	color:#2e678c;
+	font-size:16px;
+    font-family: Palatino Linotype, Verdana, Geneva, sans-serif;
+	padding: 10px 20px 10px 20px;
+}
+.button_all{ /*центрирование кнопок удалить/сохранить*/
+	text-align: center;
+}
+
+.knopka_cansel{     /*кнопка удаления, отмены*/
+	display: inline-block;
+  color: white;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-radius: 3px;
+  border-color: #E31E24;
+  background: linear-gradient(#DC291B, #9C1A0F) ;
+  transition: 0.2s;
+}
+.knopka_cansel:hover { background: linear-gradient(#9C1A0F, #79130F); } /* при наведении курсора мышки */
+.knopka_cansel:active { background:linear-gradient( #79130F, #9C1A0F);  } /* при нажатии */
+
+
+
+
+.knopka_cansel1{    /*кнопка удаления этапа*/
+  display: inline-block;
+  color: white;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-radius: 3px;
+  border-color: #F28E91;
+  background: linear-gradient(#F28E91, #CF918F ) ;
+  transition: 0.2s;
+  font-size:9px;
+  font-family: Palatino Linotype, Verdana, Geneva, sans-serif;
+  width: 50px; 
+  margin-left:15px;
+}
+.knopka_cansel:hover { background: linear-gradient(#9C1A0F, #79130F); } /* при наведении курсора мышки */
+.knopka_cansel:active { background:linear-gradient( #79130F, #9C1A0F);  } /* при нажатии */
+
+.knopka_generation{ /*кнопка генерации пароля*/ 
+	background-image: url(../images/generation.jpg); 
+	background-position:center center; 
+	width: 25px; 
+	height: 20px; 
+	background-size: 105% auto; 
+	-webkit-appearance: none; 
+	background-repeat: no-repeat; 
+	padding-bottom: 5px;
+	border: 0.5px solid #2e678c; 
+	border-radius: 1px 1px 1px 1px; 
+}
+.classik{     /*select класса*/
+	background-image: url(../images/date_date.jpg);
+	background-position:center center;
+	width: 35px; 
+	height: 25px;
+	
+	-webkit-appearance: none; 
+	border-color: #4482ac;
+	background-repeat: no-repeat;
+	text-align-last: center;
+	font-size: 12px;
+	padding-bottom: 6px;
+	
+	font-family: Palatino Linotype, Verdana, Geneva, sans-serif;
+	border-radius: 2px 2px 2px 2px;
+	vertical-align: 5px; 
+	background-size: 125% auto;
+}
+.status_member{ /*select статус организатор/участник */ 
+	background-image: url(../images/date_month.jpg);
+	background-position:center center;
+	width: 75px; 
+	height: 23px;
+	
+	-webkit-appearance: none; 
+	border-color: #4482ac;
+	background-repeat: no-repeat;
+	text-align-last: center;
+	font-size: 11px;
+	padding-bottom: 6px;
+	
+	font-family: Palatino Linotype, Verdana, Geneva, sans-serif;
+	margin: 0px 1px 0px 1px;
+	vertical-align: 5px; 
+	background-size: 125% auto;
+	border-radius: 2px 2px 2px 2px;
+}
+.redak_itog{
+background-image: url(../images/redak_olimp.jpg); 
+	background-position:center center; 
+	width: 25px;
+	padding-bottom: -10px;
+	display: inline-block;
+	height: 25px; 
+	background-size: 105% auto; 
+	-webkit-appearance: none; 
+	border:none; 
+	background-repeat: no-repeat; 
+	
+	
+	border: 1px solid #2e678c; 
+	border-radius: 1px 1px 1px 1px;	
+}
+
+#div_p_date_olimp{
+	float:left;
+	
+}
+.div_date{                 /* для выравнивания этапов и цвета текста */
+	  margin-left: 210px;
+	padding-top: 9px;
+	color: linear-gradient(#4482ac, #2e678c);
+}
+#subject_string{
+	display: none;
+}
+.predmet_olimp{                 /* кнопочки предметов */
+	background: linear-gradient(#4482ac, #2e678c);
+	
+}
+
+.tooltip
+{
+	color:blue;
+}
+
+
+#lk_schoolboy{ /**/
+	display: inline-block;
+	background: linear-gradient(#4482ac, #2e678c);
+    color: white; 
+    padding: 0 7px 0 0; 
+	line-height: 30px;
+	border-radius: 0 4px 4px 0 ;
+	text-align: right;
+	width: 200px;
+	margin-top: 5px;
+	left: 10px;
+}
+.lk_schoolboy{   /*блоки вокруг текста*/
+	display: inline-block;
+	background: linear-gradient(#4482ac, #2e678c);
+    color: white; 
+    padding: 0 7px 0 0; 
+	line-height: 30px;
+	border-radius: 0 4px 4px 0 ;
+	text-align: right;
+	width: 200px;
+	margin-top: 5px;
+
+}
+.div_date{
+	
+}
+
+.lk_scoolboy{ /*отступы и цвет общего текста*/
+	color: linear-gradient(#4482ac, #2e678c);
+	 margin-left: 7px; 
+}
+
+#lk_fio {
+	display: inline-block;	
+	color: linear-gradient(#4482ac, #2e678c);
+	font-size: 25px;
+	text-align: center;
+}
+
+#lk_fio_div {	
+	
+	text-align: left;
+	margin-left: 10%;
+}
+
+
+
+.request_zayvka{ /*кнопка заявки*/ 
+	background-image: url(../images/zayvka.jpg); 
+	background-position:center center; 
+	width: 25px; 
+	height: 25px; 
+	background-size: 105% auto; 
+	-webkit-appearance: none; 
+	border:none; 
+	background-repeat: no-repeat; 
+	position: absolute; 
+	top:2px; 
+	right:56px; 
+	border: 0.5px solid #2e678c; 
+	border-radius: 1px 1px 1px 1px; 
+} 
+.no_request_zayvka{ /*кнопка отмены заявки*/ 
+	background-image: url(../images/no_zayvka.jpg); 
+	background-position:center center; 
+	width: 25px; 
+	height: 25px; 
+	background-size: 105% auto; 
+	-webkit-appearance: none; 
+	border:none; 
+	background-repeat: no-repeat; 
+	position: absolute; 
+	top:2px; 
+	right:56px; 
+	border: 0.5px solid #2e678c; 
+	border-radius: 1px 1px 1px 1px; 
+}
+.organizator{ /*кнопка организатор*/ 
+	background-image: url(../images/organizator.jpg); 
+	background-position:center center; 
+	width: 25px; 
+	height: 25px; 
+	background-size: 105% auto; 
+	-webkit-appearance: none; 
+	border:none; 
+	background-repeat: no-repeat; 
+	position: absolute; 
+	top:2px; 
+	right:56px; 
+	border: 0.5px solid #2e678c; 
+	border-radius: 1px 1px 1px 1px; 
+}
+.delite_olimp{ /*кнопка удалить олимпиаду*/ 
+	background-image: url(../images/delite_olimp.jpg); 
+	background-position:center center; 
+	width: 25px; 
+	height: 25px; 
+	background-size: 105% auto; 
+	-webkit-appearance: none; 
+	border:none; 
+	background-repeat: no-repeat; 
+	position: absolute; 
+	top:2px; 
+	right:56px; 
+	border: 0.5px solid #2e678c; 
+	border-radius: 1px 1px 1px 1px; 
+}
+.redak_olimp{ /*кнопка редактирование олимпиады*/ 
+	background-image: url(../images/redak_olimp.jpg); 
+	background-position:center center; 
+	width: 25px; 
+	height: 25px; 
+	background-size: 105% auto; 
+	-webkit-appearance: none; 
+	border:none; 
+	background-repeat: no-repeat; 
+	position: absolute; 
+	top:2px; 
+	right:56px; 
+	border: 0.5px solid #2e678c; 
+	border-radius: 1px 1px 1px 1px; 
+}
+input[type="button"]{
+	cursor:  pointer;
+}
+input[type="label"]:pointerEvents {
+	cursor:  pointer;
+	opacity:0.7; 
+}
+.subject_math{
+	background-image: url(../images/pp_math.jpg); /* фон математики */	 
+	background-position:center center; 
+   height: 16px;
+	width: 85px;
+	background-repeat: no-repeat; 
+	margin-left: 0px;
+	color: white;
+	border-radius: 2px 2px 2px 2px;
+	text-align:left;
+	border: 0.5px solid white; 
+	font-size: 9px;
+	font-family: Palatino Linotype, Verdana, Geneva, sans-serif;
+	margin: 2px ;
+	vertical-align: 3px;
+	background-size: 100% auto; 
+	-webkit-appearance: none; 
+	border:none;
+}
+
+.subject_russ{
+	background-image: url(../images/pp_russ.jpg); /* фон русского */	 
+	background-position:center center; 
+	height: 16px;
+	width: 85px;
+	background-repeat: no-repeat; 
+	margin-left: 0px;
+	color: white;
+	border-radius: 2px 2px 2px 2px;
+	text-align:left;
+	border: 0.5px solid white; 
+	font-size: 9px;
+	font-family: Palatino Linotype, Verdana, Geneva, sans-serif;
+	margin: 2px ;
+	vertical-align: 3px;
+	background-size: 100% auto; 
+	-webkit-appearance: none; 
+ 
+}
+
+.subject_inf{
+	background-image: url(../images/pp_russ.jpg); /* фон информатики*/	 
+	background-position:center center; 
+	height: 16px;
+	width: 90px;
+	background-repeat: no-repeat; 
+	margin-left: 0px;
+	color: white;
+	border-radius: 2px 2px 2px 2px;
+	text-align:left;
+	border: 0.5px solid white; 
+	font-size: 9px;
+	font-family: Palatino Linotype, Verdana, Geneva, sans-serif;
+	margin: 2px ;
+	vertical-align: 3px;
+	background-size: 100% auto; 
+	-webkit-appearance: none; 
+ 
+}
+
+.subject_soc{
+	background-image: url(../images/pp_russ.jpg); /* фон обществознание */	 
+	background-position:center center; 
+	height: 16px;
+	width: 95px;
+	background-repeat: no-repeat; 
+	margin-left: 0px;
+	color: white;
+	border-radius:2px 2px 2px 2px;
+	text-align:left;
+	border: 0.5px solid white; 
+	font-size: 9px;
+	font-family: Palatino Linotype, Verdana, Geneva, sans-serif;
+	margin: 2px ;
+	vertical-align: 3px;
+	background-size: 100% auto; 
+	-webkit-appearance: none; 
+ 
+}
+
+#select_subject{                   /* фон select списка предметов */
+	background-image: url(../images/predm_list.jpg);  
+	background-position:center center; 
+	height: 25px;	
+	padding-bottom: 6px; 
+	width: 120px;
+	background-repeat: no-repeat; 
+	-webkit-appearance: none;
+	text-align-last: center;
+	font-size: 10x;
+	font-family: Palatino Linotype, Verdana, Geneva, sans-serif;
+	border-radius: 2px 2px 2px 2px;
+	border-color: #4482ac;
+	vertical-align: 3px; 
+	background-size: 140% auto;
+}
+
+#description_olimp{ /* поле для ввода описания*/ 
+	width: 400px;
+	height: 100px;
+	border: 1px solid #0A3C57; 
+	resize: none;
+	position: absolute;
+	margin-left: 5px;
+	margin-top: 9px;
+}
+#password{ /* размер в пароле*/
+	
+	width: 158px;
+	
+}
+.do{
+	padding-left: 12px; 
+	padding-right: 7px; 
+}
+
+.create_text{  /* поля для ввода названия и места проведения олимпиады*/ 
+	width: 400px;
+	height: 23px;
+	border: 1px solid #0A3C57; 
+}
+
+#edit_lk{ /* кнопка изменения данных в лк*/ 
+	display: inline-block; 
+	position: absolute; 
+	right: 15px; 
+	top: 10px; 
+	background-image: url(../images/redak_lk.jpg); 
+	width: 140px; 
+	height: 24px; 
+	-webkit-appearance: none; 
+	background-repeat: no-repeat; 
+	border-radius: 2px 2px 2px 2px; 
+	background-size: 100% auto; 
+	border: 0.4px solid black; 
+}
+
+ 
+input[type="button"]:disabled {
+    opacity:0.7;
+}
+.user_list{ /*кнопка отмены заявки*/ 
+	background-image: url(../images/user_list.jpg); 
+	background-position:center center; 
+	width: 25px; 
+	height: 25px; 
+	background-size: 105% auto; 
+	-webkit-appearance: none; 
+	border:none; 
+	background-repeat: no-repeat; 
+	position: absolute; 
+	top:2px; 
+	right:56px; 
+	border: 0.5px solid #2e678c; 
+	border-radius: 1px 1px 1px 1px; 
+}
+
+.day_class{            /* select дня*/
+	background-image: url(../images/date_date.jpg);
+	background-position:center center;
+	width: 35px; 
+	height: 25px;
+	
+	-webkit-appearance: none; 
+	border-color: #4482ac;
+	background-repeat: no-repeat;
+	text-align-last: center;
+	font-size: 11px;
+	padding-bottom: 6px;
+	
+	font-family: Palatino Linotype, Verdana, Geneva, sans-serif;
+	border-radius: 2px 0px 0px 2px;
+	vertical-align: 5px; 
+	background-size: 125% auto;
+}
+
+.month_class{            /* select месяц*/
+	background-image: url(../images/date_month.jpg);
+	background-position:center center;
+	width: 75px; 
+	height: 25px;
+	
+	-webkit-appearance: none; 
+	border-color: #4482ac;
+	background-repeat: no-repeat;
+	text-align-last: center;
+	font-size: 11px;
+	padding-bottom: 6px;
+	
+	font-family: Palatino Linotype, Verdana, Geneva, sans-serif;
+	margin: 0px 1px 0px 1px;
+	vertical-align: 5px; 
+	background-size: 125% auto;
+}
+
+.years_class{            /* select год*/
+	background-image: url(../images/date_year.jpg);
+	background-position:center center;
+	width: 45px; 
+	height: 25px;
+	
+	-webkit-appearance: none; 
+	border-color: #4482ac;
+	background-repeat: no-repeat;
+	text-align-last: center;
+	font-size: 11px;
+	padding-bottom: 6px;
+	
+	font-family: Palatino Linotype, Verdana, Geneva, sans-serif;
+	border-radius: 0 2px 2px 0 ;
+	vertical-align: 5px; 
+	background-size: 125% auto;
+}
+
+.time_class{
+	background-position:center center;
+	width: 35px;
+	height: 20px;
+	
+	-webkit-appearance: none; 
+	font-size: 10px;
+	font-family: Palatino Linotype, Verdana, Geneva, sans-serif;
+	border: none;
+	border-bottom: 1px solid black;
+	vertical-align: 5px; 
+	background-size: 125% auto;
+}
+input[type=time]::-webkit-inner-spin-button, 
+input[type=time]::-webkit-outer-spin-button {-webkit-appearance: none; margin:0;}
+
+
+.check_class{  /* для чекбоксов.... */
+	
+	display: inline-block;
+    height: 12px;
+    width: 12px;
+	border: 1px solid black;
+	border-radius: 20px 20px 7px 7px; 
+
+}
+
+
+
+.cursorik:hover {cursor: default}
+.tooltip:hover {cursor: pointer}
+.check_class:hover {cursor: pointer}
+#select_subject:hover {cursor: pointer}
+.classik:hover {cursor: pointer}
+.day_class:hover {cursor: pointer}
+.month_class:hover {cursor: pointer}
+.years_class:hover {cursor: pointer}
+.status_member:hover {cursor: pointer}
+#spam_email:hover {cursor: pointer}
+#sex:hover {cursor: pointer}
+
+.besttr:hover {cursor: default}
+.table_reiting_td:hover {cursor: default}
+
+#cursorik:hover{cursor: default}
+#knopka1:hover {cursor: pointer}
+#name_p:hover{cursor: default}
+#stroka2:hover{cursor: default}
+#stroka3:hover{cursor: default}
+
+#table_reiting_td1:hover{cursor: default}
+
+
+#place_in_the_ranking:hover {cursor: pointer}
+#digits:hover {cursor: pointer}
+#digits1:hover {cursor: pointer}
+.table_reiting_td_shapka:hover {cursor: pointer}
+#digits11:hover {cursor: pointer}
+#digits3:hover {cursor: pointer}

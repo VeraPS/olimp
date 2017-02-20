@@ -1,0 +1,172 @@
+<?php
+include ("js/Generation_pass.js");
+?>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; Charset=UTF-8"> 
+<title>Регистрация</title>
+
+</head>
+<body>		
+<div id="inside_main">
+<div id="name">
+			
+</div>
+	
+	<form action="../bd/save_user.php" method="post">
+	<!--**** save_user.php - это адрес обработчика. То есть, после нажатия на кнопку "Зарегистрироваться", данные из полей отправятся на страничку save_user.php методом "post" ***** -->
+		<div>
+			<label>Фамилия</label>
+			<input name="surname" type="text" >
+		</div>
+		<div>
+			<label>Имя</label>
+			<input name="forename" type="text" >
+		</div> 
+		<div>
+			<label>Отчество</label>
+			<input name="patronymic" type="text" >
+		</div> 	  
+		<div>
+			<label>Пол</label>
+			<input type="radio" id="sex" name="sex" value="male" checked /> <label>Мужской</label>
+			<input type="radio" id="sex" name="sex" value="female"  /> <label>Женский</label>
+		</div>
+		<div name="none">
+			<label>Дата рождения</label>
+			<select name="day1" id="day1"></select>
+			<select name="month1" id="month1"   ></select>
+			<select name="year1" id="year1"   ></select>
+		</div >
+		<div name="none">
+			<label>Школа</label>
+			<input  name="school" type="text" >
+		</div>
+		<div name="none">
+			<label>Класс</label>		
+			<SELECT id="select_class"  name="select_class" size="1">
+			   <option value="0">№
+			   <option value="1">1
+			   <option value="2">2
+			   <option value="3">3
+			   <option value="4">4
+			   <option value="5">5
+			   <option value="6">6
+			   <option value="7">7
+			   <option value="8">8
+			   <option value="9">9
+			   <option value="10">10
+			   <option value="11">11
+			</SELECT>
+		</div>
+		<div>
+			<label>Логин</label>
+			<input name="login" type="text" >
+		</div>
+	<!--**** В текстовое поле (name="login" type="text") пользователь вводит свой логин ***** -->  
+		<div>
+			<label>Пароль</label>
+			<input id="password" name="password" type="password" >
+			<a href="#" onclick="generatePass('password')">Сгенерировать</a>
+		</div>
+		<div>
+			<label>Место жительства</label>
+			<input name="location" type="text" >
+		</div>	
+		<div>
+			<label>Мобильный телефон</label>
+			<input name="mob_number" type="text" >
+		</div>
+		<div>
+			<label>Адрес эл. почты</label>
+			<input name="email" type="text" >
+		</div>
+		<div>
+			<label>Рассылка на эл.почту</label>
+			<input type="checkbox" id="spam_email" name="spam_email" value="ON"> 
+		</div>
+		<div>			
+			<label>Статус</label>		
+			<SELECT id="select_status" onchange = "organ()" name="select_status"  size="1">
+			   <option value="1">Участник
+			   <option value="2">Организатор			
+			</SELECT>
+		</div>
+		
+	<!--**** В поле для паролей (name="password" type="password") пользователь вводит свой пароль ***** -->  
+		<div>
+			<input type="submit" name="submit" value="Зарегистрироваться">
+	<!--**** Кнопочка (type="submit") отправляет данные на страничку save_user.php ***** -->  
+		</div>
+	</form>
+</div>
+</body>
+</html>
+<script>
+function organ(){
+	for (var i=0; i<document.getElementsByName('none').length; i++) {
+		document.getElementsByName('none')[i].style.display="none";
+	}
+	
+}
+window.onload = function () {
+    var day = new Date,
+        md = (new Date(day.getFullYear(), day.getMonth() + 1, 0, 0, 0, 0, 0)).getDate(),
+        $month_name = "января февраля марта апреля мая июня июля августа сентября октября ноября декабря".split(" ");
+ 
+    function set_select(a, c, d, e) {
+        var el = document.getElementsByName(a)[0];
+        for (var b = el.options.length = 0; b < c; b++) {
+
+            el.options[b] = new Option(a == 'month1' ? $month_name[b] : b + d, b + d);
+         }
+		// el.options[0] = new Option(e);
+		 //el.value=e;
+		 //alert("ds");
+		
+		
+        el.options[e] && (el.options[e].selected = !0)
+    }
+	set_select("day1", md, 1, "дд");
+    set_select("month1", 12, 1, "мм");
+    set_select("year1", 20, day.getFullYear()-19, "гг");/*
+	set_select("day1", md, 1, day.getDate() - 1);
+
+    set_select("month1", 12, 1, day.getMonth());
+
+    set_select("year1", 11, day.getFullYear()-10, 10);*/
+
+ 
+   // document.getElementsByName('hour')[0].value = day.getHours();
+   // document.getElementsByName('minute')[0].value = day.getMinutes();
+ 
+    var year1 = document.getElementById('year1');
+    var month1 = document.getElementById("month1");
+ 
+    function check_date() {
+        var a = year1.value | 0,
+            c = month1.value | 0;
+			
+        md = (new Date(a, c, 0, 0, 0, 0, 0)).getDate();
+        a = document.getElementById("day1").selectedIndex;
+		
+        set_select("day1", md, 1, a);
+    };
+	
+
+	
+	
+    if (document.addEventListener) {
+        year1.addEventListener('change', check_date, false);
+        month1.addEventListener('change', check_date, false);
+ 
+    } else {
+        year1.detachEvent('onchange', check_date);
+        month1.detachEvent('onchange', check_date);
+    }
+
+}
+</script>
+
+
+
