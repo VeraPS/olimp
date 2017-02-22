@@ -779,3 +779,7 @@ margin: 20px auto;
 	height:20px;
 }
 
+.surname label:after {
+  content: "*";
+  color: red;
+}
