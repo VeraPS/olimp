@@ -132,7 +132,7 @@ body{
 }
 #Olympiad_description_elements3{
 	background: #27739A;
-	Color: white;
+	Color: red;
 	font-size: 18pt;
 	padding: 0 10px 0 122px;
 	border-radius: 0 4px 4px 0;	 
@@ -779,7 +779,4 @@ margin: 20px auto;
 	height:20px;
 }
 
-.surname label:after {
-  content: "*";
-  color: red;
-}
+
